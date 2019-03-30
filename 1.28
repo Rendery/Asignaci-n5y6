@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b;
+	cin >> a; cin >> b;
+	if (a > b)
+	{
+		cout << a << "es el más grande";
+	}
+	if (a = b)
+	{
+		cout << "es el más grande";
+	}
+	if (a < b)
+	{
+		cout << b << "es el más grande";
+	}
+	system("pause");
+}
