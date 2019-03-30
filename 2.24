@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num;
+	cin >> num;
+	if (num / 2 == 0)
+	{
+	cout << "el numero es par" << endl;
+	}
+	else
+	{
+	cout << "el numero es impar" << endl;
+	}
+	system("pause");
+}
