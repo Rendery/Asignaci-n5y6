@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int radio;
+	cout << "radio: ";
+	cin >> radio;
+	cout << "El diametro es " << radio * 2 << endl;
+	cout << "La circunferencia es " << 3.14159 * 2 * radio << endl;
+	cout << "El Area es " << radio * radio * 3.14159 << endl;
+
+	system("pause");
+}
