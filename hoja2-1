@@ -1,0 +1,19 @@
+
+#include <iostream>
+
+int main()
+{
+	int cinco, dos, uno, c;
+	std::cout << "Escriva la cantidad de monedas:";
+	std::cin >> c;
+	cinco = c / 5;
+	dos = (c % 5) / 2;
+	uno = (c % 5) % 2;
+	std::cout << "El resultado es:" << cinco << dos << uno << std::endl;
+
+
+	
+	
+	
+}
+
