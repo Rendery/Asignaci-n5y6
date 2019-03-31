@@ -1,0 +1,33 @@
+#include <iostream> 
+#include <conio.h> 
+using namespace std;
+
+int main()
+{
+	double algo, peso, altura, MIT;
+	cout << "Ingrese su peso en Kilogramos: " << endl;
+	cin >> peso;
+	cout << "Ingrese su altura en metros: " << endl;
+	cin >> altura;
+
+	MIT = peso / (altura*altura);
+
+	if (MIT < 18.5)
+	{
+		cout << "usted tiene un bajo peso";
+	}
+	else if (18.5 <= MIT <= 24.9)
+	{
+		cout << "usted tiene un peso normal";
+	}
+	else if (25 <= MIT <= 29.9)
+	{
+		cout << "usted tiene sobrepeso";
+	}
+	else if (MIT > 30)
+	{
+		cout << "usted tiene obesidad";
+	}
+
+	_getch();
+}
