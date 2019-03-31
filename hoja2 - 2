@@ -1,0 +1,21 @@
+
+#include <iostream>
+
+int main()
+{
+	int hora, minutos, segundos, t;
+	std::cout << "El numero de segundos es:";
+	std::cin >> t;
+	hora = t / 3600;
+		minutos = (hora/60) % t;
+		segundos = (t % 60);
+		std::cout << "El numero de horas es:" << hora << std::endl;
+		std::cout << "El numero de Minutos es:" << minutos << std::endl;
+		std::cout << "El numero de segundos es:" << segundos << std::endl;
+
+	
+	
+	
+	 
+}
+
