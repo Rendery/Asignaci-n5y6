@@ -1,0 +1,47 @@
+#include <conio.h>
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+using namespace System;
+using namespace std;
+int main()
+{
+	Console::SetCursorPosition(25, 6);
+	cout << "    LETRAS ESPECIALES";
+	srand(time(NULL));
+	int a,k=1;
+	while (true)
+	{
+		if (k == 1)
+		{
+			Console::ForegroundColor = ConsoleColor::DarkYellow;
+		}
+		if (k == 2)
+		{
+			Console::ForegroundColor = ConsoleColor::DarkBlue;
+		}
+		if (k == 3)
+		{
+			Console::ForegroundColor = ConsoleColor::DarkMagenta;
+		}
+		if (k == 4)
+		{
+			Console::ForegroundColor = ConsoleColor::DarkGreen;
+		}
+		if (k == 5)
+		{
+			Console::ForegroundColor = ConsoleColor::DarkYellow;
+			k = 2;
+		}
+		Console::SetCursorPosition(20, 10);
+		for (int i = 0; i < 30; i++)
+		{
+		a = 128 + rand() % (254 + 1 - 128);
+		cout << char(a+i);
+		_sleep(90);
+		}
+		k++;
+	}
+
+	_getch();
+}
