@@ -1,0 +1,18 @@
+#include <iostream> 
+#include <conio.h> 
+using namespace std;
+
+int main()
+{
+	int kimberly, claudia, dyane, ivonne, andrea, maricielo;
+	cout << "numero: "; cin >> kimberly;
+
+	claudia		= kimberly / 10000;
+	dyane		= kimberly % 10000 /1000;
+	ivonne		= kimberly % 10000 % 1000 /100;
+	andrea		= kimberly % 10000 % 1000 % 100 /10;
+	maricielo	= kimberly % 10000 % 1000 % 100 % 10;
+
+	cout << claudia << "  " << dyane << "  " << ivonne << "  " << andrea << "  " << maricielo;
+	_getch();
+}
