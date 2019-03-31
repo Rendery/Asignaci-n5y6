@@ -1,0 +1,44 @@
+
+#include <iostream>
+
+int main()
+{
+	int a, b, c, suma, resta, multiplicacion, mayor, menor;
+	std::cout << "defina el valor1:";
+	std::cin >> a;
+	std::cout << "defina el valor2:";
+	std::cin >> b;
+	std::cout << "defina el valor3:";
+	std::cin >> c;
+	suma = a + b + c;
+	resta = a - b - c;
+	multiplicacion = a * b*c;
+	std::cout << "La suma es:" << suma << std::endl;
+	std::cout << "La resta es:" << resta << std::endl;
+	std::cout << "La multiplicacion es:" << multiplicacion << std::endl;
+	if (a > b && a > c)
+	{
+		std::cout << "El numero mayor es " << a << std::endl;
+	}
+	else
+		if (b > a && b > c)
+		{
+			std::cout << "El numero mayor es " << b << std::endl;
+		}
+		else
+			if (c > a && c > b)
+			{
+				std::cout << "El numero mayor es " << c << std::endl;
+			}
+
+
+
+
+	if (a < b && a < c)
+		std::cout << "El numero menor es " << a << std::endl;
+	if (b < a && b < c)
+		std::cout << "El numero menor es " << b << std::endl;
+	if (c < a && c < b)
+		std::cout << "El numero menor es " << c << std::endl;
+	system("pause");
+}
